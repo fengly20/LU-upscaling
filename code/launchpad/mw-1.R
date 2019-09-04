@@ -88,7 +88,7 @@ B_outs <- paste0(out_dir, '/', B_outs)
 
 for (cdl_csv_fn in B_outs) { 
   year <- unlist(strsplit(cdl_csv_fn, '-'))[8]
-  out_fn <- paste0(out_dir, '/C.cdl-mw-frac-', 'year', '-', FN_RES, '.csv')
+  out_fn <- paste0(out_dir, '/C.cdl-mw-frac-', year, '-', FN_RES, '.csv')
   out_fn_corn <- paste0(out_dir, '/C.cdl-mw-frac-', year, '-', FN_RES, '-corn-mat', '.csv')
   out_fn_sb <- paste0(out_dir, '/C.cdl-mw-frac-', year, '-', FN_RES, '-soybean-mat', '.csv')
   out_fn_area <- paste0(out_dir, '/C.grid-area.csv')
