@@ -38,6 +38,7 @@ cdl_sb$frac_mw <- c(as.matrix(ras_sb_mw))
 cdl_sb$frac_mw[is.na(cdl_sb$frac_mw)] <- 0
 
 cdl_mw <-rbind(cdl_corn, cdl_sb)
+cdl_mw$year <- year
 
 write.csv(cdl_mw, out_fn, row.names = F)
 
