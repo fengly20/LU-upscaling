@@ -1,7 +1,7 @@
 .Rhistory
 input/downloads/*
 output/*
-.DS_Store
+*.DS_Store
 
 !input/downloads/README.txt
 !output/README.txt

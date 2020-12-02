@@ -95,5 +95,11 @@ for (cdl_csv_fn in B_outs) {
   source('./code/C.cdl-cropping-midwest.R')
 }
 
+# run P script plots
+cdl_frac_list <- list.files(out_dir, pattern = 'C.cdl-mw-frac-') 
+cdl_frac_list <- grep(cdl_frac_list, pattern = 'mat', invert = T, value = T)
+year_list <- seq(2008, 2018)
+
+
 rm(list = ls())
 gc()
